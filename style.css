@@ -1,0 +1,66 @@
+@font-face {
+  font-family: googleFont;
+  src: url(./fonts/Baloo_Bhai_2/BalooBhai2-Regular.ttf);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: googleFont;
+}
+
+body,html{
+  height: 100vh;
+  width: 100vw;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+header{
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  #portfolio-image{
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: url(./images/portrait-handsome-young-man-with-arms-crossed-holding-white-headphone-around-his-neck.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  nav ul{
+    display: flex;
+    margin-right: 30px;
+    gap: 19px;
+    li{
+      list-style: none;
+      position: relative;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      &::after{
+        content: '';
+        height: 3px;
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease;
+      }
+      &:hover::after{
+        transform: scaleX(1);
+      }
+    }
+  }
+}

@@ -19,15 +19,15 @@ body::-webkit-scrollbar{
 
 header{
   margin: 10px auto;
-  width: 80%;
+  width: 60%;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 35px;
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   #portfolio-image{
-    width: 40px;
+    width: 50px;
     aspect-ratio: 1;
     border-radius: 50%;
     background-image: url(./images/portrait-handsome-young-man-with-arms-crossed-holding-white-headphone-around-his-neck.jpg);
